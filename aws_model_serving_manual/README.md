@@ -7,18 +7,8 @@ This repository contains pre-built examples to help customers get started with t
 ## Contents
 
 - [Introduction to Bedrock](introduction-to-bedrock) - Learn the basics of the Bedrock service
-- [Prompt Engineering ](articles-guides) - Tips for crafting effective prompts 
-- [Agents](agents-and-function-calling) - Ways to implement Generative AI Agents and its components.
 - [Custom Model Import](custom-models) - Import custom models into Bedrock
-- [Multimodal](multi-modal) - Working with multimodal data using Amazon Bedrock
-- [Generative AI Use cases](genai-use-cases) - Example use cases for generative AI
-- [Retrival Augmented Generation (RAG)](rag) - Implementing RAG
-- [Responsible AI](responsible_ai) - Use Bedrock responsibly and ethically
-- [Workshop](workshops) - Example for Amazon Bedrock Workshop
-- [POC to Prod](poc-to-prod) - Productionize workloads using Bedrock
 - [Embeddings](embeddings) - Learn how to use Embedding Models available on Amazon Bedrock 
-- [Observability & Evaluation](evaluation-observe) - Learn how Amazon Bedrock helps with improving observability and evalution of Models, Gen AI Applications.
-
 
 ## Getting Started
 
@@ -47,20 +37,6 @@ To grant Bedrock access to your identity, you can:
     ]
 }
 ```
-
-> ⚠️ **Note 1:** With Amazon SageMaker, your notebook execution role will typically be *separate* from the user or role that you log in to the AWS Console with. If you'd like to explore the AWS Console for Amazon Bedrock, you'll need to grant permissions to your Console user/role too.
-
-> ⚠️ **Note 2:** For top level folder changes, please reach out to the GitHub mainterners.
-
-For more information on the fine-grained action and resource permissions in Bedrock, check out the Bedrock Developer Guide.
-
-## Contributing
-
-We welcome community contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
 ## License
 
