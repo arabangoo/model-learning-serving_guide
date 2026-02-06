@@ -1944,10 +1944,9 @@ print(result)  # 안녕하세요, 어떻게 지내세요?
 ## 추가 리소스
 
 ### Ollama
-- 공식 웹사이트: https://ollama.ai
+- 공식 웹사이트: https://ollama.com
 - GitHub: https://github.com/ollama/ollama
 - 모델 라이브러리: https://ollama.ai/library
-- Discord 커뮤니티: https://discord.gg/ollama
 
 ### vLLM
 - 공식 문서: https://docs.vllm.ai
