@@ -1955,5 +1955,5 @@ print(result)  # 안녕하세요, 어떻게 지내세요?
 
 ### 모델 허브
 - Hugging Face: https://huggingface.co/models
-- Ollama Library: https://ollama.ai/library
+- Ollama Library: https://ollama.com/library
 
