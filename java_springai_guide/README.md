@@ -3215,5 +3215,6 @@ public class BatchEmbeddingService {
 - [Spring AI 공식 문서](https://docs.spring.io/spring-ai/reference/)
 - [LangChain4j GitHub](https://github.com/langchain4j/langchain4j)
 - [GraalVM Native Image](https://www.graalvm.org/native-image/)
-- [Hibernate Performance Tuning](https://docs.jboss.org/hibernate/orm/6.0/userguide/html_single/Hibernate_User_Guide.html#performance)
+
+
 
