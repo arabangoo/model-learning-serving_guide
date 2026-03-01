@@ -3998,7 +3998,7 @@ CompletableFuture<List<VectorDocument>> future2 = vectorService.searchAsync("que
 CompletableFuture.allOf(future1, future2).join();
 ```
 
-### 장단점 요약
+### 장점 요약
 
 #### ✅ 장점
 
@@ -4021,3 +4021,4 @@ CompletableFuture.allOf(future1, future2).join();
    - 명확한 레이어 구조
    - 의존성 주입으로 테스트 용이
    - 대규모 팀 협업 유리
+
