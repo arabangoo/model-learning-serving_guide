@@ -58,24 +58,24 @@ Hugging Face의 다양한 오픈소스 모델을 GPU 서버에 올려 API로 서
 
 ### 1. 계정 생성
 
-(1) [https://www.runpod.io](https://www.runpod.io) 접속 후 **Sign Up** 클릭
-(2) Google 계정 또는 이메일로 회원가입
-(3) 이메일 인증 완료
+(1) [https://www.runpod.io](https://www.runpod.io) 접속 후 **Sign Up** 클릭   
+(2) Google 계정 또는 이메일로 회원가입   
+(3) 이메일 인증 완료   
 
 ### 2. 크레딧 충전
 
-(1) 대시보드 좌측 메뉴 → **Billing** 클릭
-(2) 신용카드 등록 후 원하는 금액 충전 (최소 $10)
-(3) 처음 $10 충전 시 $5~$500 사이의 랜덤 크레딧 보너스 지급
+(1) 대시보드 좌측 메뉴 → **Billing** 클릭   
+(2) 신용카드 등록 후 원하는 금액 충전 (최소 $10)   
+(3) 처음 $10 충전 시 $5~$500 사이의 랜덤 크레딧 보너스 지급   
 
 > RunPod는 선불 크레딧 방식으로 동작한다. 사용한 GPU 시간만큼 크레딧이 차감된다.
 
 ### 3. API 키 발급
 
-(1) 대시보드 우측 상단 프로필 클릭 → **Settings** 선택
-(2) **API Keys** 탭으로 이동
-(3) **+ API Key** 버튼 클릭하여 새 키 생성
-(4) 생성된 API 키를 즉시 복사하여 안전한 곳에 보관
+(1) 대시보드 우측 상단 프로필 클릭 → **Settings** 선택   
+(2) **API Keys** 탭으로 이동   
+(3) **+ API Key** 버튼 클릭하여 새 키 생성   
+(4) 생성된 API 키를 즉시 복사하여 안전한 곳에 보관   
 
 ```
 RUNPOD_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -125,10 +125,10 @@ RunPod는 vLLM 기반의 서버리스 LLM 엔드포인트를 손쉽게 배포할
 
 #### 1단계: Serverless 메뉴 진입
 
-(1) 대시보드 좌측 메뉴 → **Serverless** 클릭
-(2) **+ New Endpoint** 버튼 클릭
-(3) **Explore** 탭에서 **vLLM** 검색 후 선택
-(4) **Deploy** 버튼 클릭
+(1) 대시보드 좌측 메뉴 → **Serverless** 클릭   
+(2) **+ New Endpoint** 버튼 클릭   
+(3) **Explore** 탭에서 **vLLM** 검색 후 선택   
+(4) **Deploy** 버튼 클릭   
 
 #### 2단계: 모델 설정
 
@@ -177,9 +177,9 @@ Llama 등 접근 승인이 필요한 모델은 Hugging Face 액세스 토큰이 
 
 #### 4단계: 엔드포인트 생성
 
-(1) **Create Endpoint** 버튼 클릭
-(2) 모델 다운로드 및 초기화 완료까지 수 분~수십 분 대기
-(3) 엔드포인트 상태가 **Ready** 로 변경되면 사용 가능
+(1) **Create Endpoint** 버튼 클릭   
+(2) 모델 다운로드 및 초기화 완료까지 수 분~수십 분 대기   
+(3) 엔드포인트 상태가 **Ready** 로 변경되면 사용 가능   
 
 #### 5단계: Endpoint ID 확인
 
@@ -216,8 +216,8 @@ vLLM 배포 후 환경 변수를 통해 세부 동작을 조정할 수 있다.
 
 배포가 완료되면 RunPod 대시보드에서 직접 테스트할 수 있다.
 
-(1) 엔드포인트 상세 페이지 → **Requests** 탭 클릭
-(2) 기본 테스트 입력으로 요청 전송
+(1) 엔드포인트 상세 페이지 → **Requests** 탭 클릭   
+(2) 기본 테스트 입력으로 요청 전송   
 
 ```json
 {
@@ -227,7 +227,7 @@ vLLM 배포 후 환경 변수를 통해 세부 동작을 조정할 수 있다.
 }
 ```
 
-(3) 정상 응답 예시
+(3) 정상 응답 예시   
 
 ```json
 {
@@ -668,11 +668,11 @@ docker push yourdockerhub/my-llm-worker:latest
 
 ### 5. RunPod에 배포
 
-(1) 대시보드 → **Serverless** → **+ New Endpoint**
-(2) **Custom** 탭 선택
-(3) Container Image에 `docker.io/yourdockerhub/my-llm-worker:latest` 입력
-(4) GPU 타입 및 스케일링 설정
-(5) **Deploy Endpoint** 클릭
+(1) 대시보드 → **Serverless** → **+ New Endpoint**   
+(2) **Custom** 탭 선택   
+(3) Container Image에 `docker.io/yourdockerhub/my-llm-worker:latest` 입력   
+(4) GPU 타입 및 스케일링 설정   
+(5) **Deploy Endpoint** 클릭   
 
 ### 6. Custom Worker API 호출
 
@@ -717,11 +717,11 @@ print(output)
 
 ### Pod 생성
 
-(1) 대시보드 → **Pods** → **+ Deploy** 클릭
-(2) GPU 타입 선택 (예: RTX 3090, A40, A100)
-(3) 템플릿 선택: `RunPod Pytorch 2.x` 또는 `RunPod CUDA 12.x`
-(4) 볼륨 크기 설정 (모델 저장 공간)
-(5) **Deploy** 클릭
+(1) 대시보드 → **Pods** → **+ Deploy** 클릭   
+(2) GPU 타입 선택 (예: RTX 3090, A40, A100)   
+(3) 템플릿 선택: `RunPod Pytorch 2.x` 또는 `RunPod CUDA 12.x`   
+(4) 볼륨 크기 설정 (모델 저장 공간)   
+(5) **Deploy** 클릭   
 
 ### Pod에서 vLLM 서버 실행
 
